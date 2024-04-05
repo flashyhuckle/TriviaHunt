@@ -1,0 +1,963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4064E932B95D9440088DAC9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A4064E922B95D9440088DAC9 /* FirebaseAuth */; };
+		A4064E952B95D9440088DAC9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A4064E942B95D9440088DAC9 /* FirebaseFirestore */; };
+		A4064E972B95EA3F0088DAC9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064E962B95EA3F0088DAC9 /* SignUpViewController.swift */; };
+		A4064E9A2B95EA570088DAC9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064E992B95EA570088DAC9 /* SignUpViewModel.swift */; };
+		A4064E9C2B95FE650088DAC9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064E9B2B95FE650088DAC9 /* Route.swift */; };
+		A4064E9E2B96160B0088DAC9 /* RouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064E9D2B96160B0088DAC9 /* RouteListViewController.swift */; };
+		A4064EA12B9616710088DAC9 /* UserRouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064EA02B9616710088DAC9 /* UserRouteListViewController.swift */; };
+		A4064EA42B9616880088DAC9 /* UserRouteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064EA32B9616880088DAC9 /* UserRouteListViewModel.swift */; };
+		A4064EA62B96394F0088DAC9 /* RouteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064EA52B96394F0088DAC9 /* RouteDetailsViewController.swift */; };
+		A4064EA92B9639790088DAC9 /* RouteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064EA82B9639790088DAC9 /* RouteDetailsViewModel.swift */; };
+		A4064EAB2B9644260088DAC9 /* PasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064EAA2B9644260088DAC9 /* PasswordChecker.swift */; };
+		A446153E2B8CA15900F71312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446153D2B8CA15900F71312 /* AppDelegate.swift */; };
+		A44615402B8CA15900F71312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446153F2B8CA15900F71312 /* SceneDelegate.swift */; };
+		A44615422B8CA15900F71312 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615412B8CA15900F71312 /* LoginViewController.swift */; };
+		A44615472B8CA15D00F71312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44615462B8CA15D00F71312 /* Assets.xcassets */; };
+		A446154A2B8CA15D00F71312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44615482B8CA15D00F71312 /* LaunchScreen.storyboard */; };
+		A44615552B8CA15D00F71312 /* TriviaHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615542B8CA15D00F71312 /* TriviaHuntTests.swift */; };
+		A446155F2B8CA15D00F71312 /* TriviaHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446155E2B8CA15D00F71312 /* TriviaHuntUITests.swift */; };
+		A44615612B8CA15D00F71312 /* TriviaHuntUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615602B8CA15D00F71312 /* TriviaHuntUITestsLaunchTests.swift */; };
+		A446156E2B8CA50900F71312 /* CommunityRouteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446156D2B8CA50900F71312 /* CommunityRouteListViewController.swift */; };
+		A44615702B8CA87100F71312 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446156F2B8CA87100F71312 /* MapViewController.swift */; };
+		A44615722B8CC26F00F71312 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615712B8CC26F00F71312 /* LocationDetailViewController.swift */; };
+		A44615742B8CC2A700F71312 /* MapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615732B8CC2A700F71312 /* MapPoint.swift */; };
+		A44615762B8CD68700F71312 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615752B8CD68700F71312 /* LocationManager.swift */; };
+		A44615782B8CDB8200F71312 /* PointsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615772B8CDB8200F71312 /* PointsListViewController.swift */; };
+		A446157A2B8F941300F71312 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615792B8F941300F71312 /* LoginViewModel.swift */; };
+		A446157E2B8F968B00F71312 /* CommunityRouteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446157D2B8F968B00F71312 /* CommunityRouteListViewModel.swift */; };
+		A44615812B8F978000F71312 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615802B8F978000F71312 /* MapViewModel.swift */; };
+		A44615872B8F9CE900F71312 /* CustomMKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615862B8F9CE900F71312 /* CustomMKPointAnnotation.swift */; };
+		A44615892B8FA01F00F71312 /* LocationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44615882B8FA01F00F71312 /* LocationDetailViewModel.swift */; };
+		A446158B2B8FA9A100F71312 /* PointsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446158A2B8FA9A100F71312 /* PointsListViewModel.swift */; };
+		A446158D2B909FC900F71312 /* CreateRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446158C2B909FC900F71312 /* CreateRouteViewController.swift */; };
+		A446158F2B909FE700F71312 /* CreateRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446158E2B909FE700F71312 /* CreateRouteViewModel.swift */; };
+		A4A7B20D2B974AAD00056047 /* AddMapPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7B20C2B974AAD00056047 /* AddMapPointCell.swift */; };
+		A4A7B20F2B974E5200056047 /* EditMapPointDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7B20E2B974E5200056047 /* EditMapPointDataViewController.swift */; };
+		A4A7B2122B974E6500056047 /* EditMapPointDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7B2112B974E6500056047 /* EditMapPointDataViewModel.swift */; };
+		A4A7B2142B974E7700056047 /* AddMapPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7B2132B974E7700056047 /* AddMapPointViewController.swift */; };
+		A4A7B2172B974E8F00056047 /* AddMapPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7B2162B974E8F00056047 /* AddMapPointViewModel.swift */; };
+		A4A7B2192B979DE200056047 /* FirebaseStorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7B2182B979DE200056047 /* FirebaseStorageHandler.swift */; };
+		A4B121702BA20EB0007CA14E /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B1216F2BA20EB0007CA14E /* FirebaseAuthenticator.swift */; };
+		A4B121722BA453F6007CA14E /* FinishRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121712BA453F6007CA14E /* FinishRouteViewController.swift */; };
+		A4B121752BA45426007CA14E /* FinishRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121742BA45426007CA14E /* FinishRouteViewModel.swift */; };
+		A4B121772BA84A9F007CA14E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B121762BA84A9F007CA14E /* GoogleService-Info.plist */; };
+		A4B121792BA84BFF007CA14E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121782BA84BFF007CA14E /* String.swift */; };
+		A4B1217C2BA84C1D007CA14E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B1217B2BA84C1D007CA14E /* UIColor.swift */; };
+		A4B1217E2BA97193007CA14E /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B1217D2BA97193007CA14E /* CustomAlertViewController.swift */; };
+		A4B121812BA9ABF5007CA14E /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121802BA9ABF5007CA14E /* UUID.swift */; };
+		A4B121852BA9F2E7007CA14E /* PathMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121842BA9F2E7007CA14E /* PathMonitor.swift */; };
+		A4B121882BAAED53007CA14E /* TriviaLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B121872BAAED53007CA14E /* TriviaLoginTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A44615512B8CA15D00F71312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A44615322B8CA15900F71312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A44615392B8CA15900F71312;
+			remoteInfo = TriviaTreasureHunt;
+		};
+		A446155B2B8CA15D00F71312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A44615322B8CA15900F71312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A44615392B8CA15900F71312;
+			remoteInfo = TriviaTreasureHunt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4064E962B95EA3F0088DAC9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A4064E992B95EA570088DAC9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		A4064E9B2B95FE650088DAC9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		A4064E9D2B96160B0088DAC9 /* RouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListViewController.swift; sourceTree = "<group>"; };
+		A4064EA02B9616710088DAC9 /* UserRouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouteListViewController.swift; sourceTree = "<group>"; };
+		A4064EA32B9616880088DAC9 /* UserRouteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouteListViewModel.swift; sourceTree = "<group>"; };
+		A4064EA52B96394F0088DAC9 /* RouteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewController.swift; sourceTree = "<group>"; };
+		A4064EA82B9639790088DAC9 /* RouteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewModel.swift; sourceTree = "<group>"; };
+		A4064EAA2B9644260088DAC9 /* PasswordChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChecker.swift; sourceTree = "<group>"; };
+		A446153A2B8CA15900F71312 /* TriviaHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A446153D2B8CA15900F71312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A446153F2B8CA15900F71312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A44615412B8CA15900F71312 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A44615462B8CA15D00F71312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A44615492B8CA15D00F71312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A446154B2B8CA15D00F71312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44615502B8CA15D00F71312 /* TriviaHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44615542B8CA15D00F71312 /* TriviaHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaHuntTests.swift; sourceTree = "<group>"; };
+		A446155A2B8CA15D00F71312 /* TriviaHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A446155E2B8CA15D00F71312 /* TriviaHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaHuntUITests.swift; sourceTree = "<group>"; };
+		A44615602B8CA15D00F71312 /* TriviaHuntUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaHuntUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A446156D2B8CA50900F71312 /* CommunityRouteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRouteListViewController.swift; sourceTree = "<group>"; };
+		A446156F2B8CA87100F71312 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A44615712B8CC26F00F71312 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		A44615732B8CC2A700F71312 /* MapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoint.swift; sourceTree = "<group>"; };
+		A44615752B8CD68700F71312 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A44615772B8CDB8200F71312 /* PointsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsListViewController.swift; sourceTree = "<group>"; };
+		A44615792B8F941300F71312 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A446157D2B8F968B00F71312 /* CommunityRouteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRouteListViewModel.swift; sourceTree = "<group>"; };
+		A44615802B8F978000F71312 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		A44615862B8F9CE900F71312 /* CustomMKPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMKPointAnnotation.swift; sourceTree = "<group>"; };
+		A44615882B8FA01F00F71312 /* LocationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewModel.swift; sourceTree = "<group>"; };
+		A446158A2B8FA9A100F71312 /* PointsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsListViewModel.swift; sourceTree = "<group>"; };
+		A446158C2B909FC900F71312 /* CreateRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRouteViewController.swift; sourceTree = "<group>"; };
+		A446158E2B909FE700F71312 /* CreateRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRouteViewModel.swift; sourceTree = "<group>"; };
+		A4A7B20C2B974AAD00056047 /* AddMapPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMapPointCell.swift; sourceTree = "<group>"; };
+		A4A7B20E2B974E5200056047 /* EditMapPointDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMapPointDataViewController.swift; sourceTree = "<group>"; };
+		A4A7B2112B974E6500056047 /* EditMapPointDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMapPointDataViewModel.swift; sourceTree = "<group>"; };
+		A4A7B2132B974E7700056047 /* AddMapPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMapPointViewController.swift; sourceTree = "<group>"; };
+		A4A7B2162B974E8F00056047 /* AddMapPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMapPointViewModel.swift; sourceTree = "<group>"; };
+		A4A7B2182B979DE200056047 /* FirebaseStorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHandler.swift; sourceTree = "<group>"; };
+		A4B1216F2BA20EB0007CA14E /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
+		A4B121712BA453F6007CA14E /* FinishRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRouteViewController.swift; sourceTree = "<group>"; };
+		A4B121742BA45426007CA14E /* FinishRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRouteViewModel.swift; sourceTree = "<group>"; };
+		A4B121762BA84A9F007CA14E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4B121782BA84BFF007CA14E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A4B1217B2BA84C1D007CA14E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A4B1217D2BA97193007CA14E /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		A4B121802BA9ABF5007CA14E /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
+		A4B121842BA9F2E7007CA14E /* PathMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMonitor.swift; sourceTree = "<group>"; };
+		A4B121872BAAED53007CA14E /* TriviaLoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaLoginTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A44615372B8CA15900F71312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4064E932B95D9440088DAC9 /* FirebaseAuth in Frameworks */,
+				A4064E952B95D9440088DAC9 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A446154D2B8CA15D00F71312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A44615572B8CA15D00F71312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4064E982B95EA450088DAC9 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4064E962B95EA3F0088DAC9 /* SignUpViewController.swift */,
+				A4064E992B95EA570088DAC9 /* SignUpViewModel.swift */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
+		A4064E9F2B96160F0088DAC9 /* RouteListVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4064E9D2B96160B0088DAC9 /* RouteListViewController.swift */,
+				A4064EA22B9616750088DAC9 /* UserRouteVC */,
+				A446157C2B8F95CE00F71312 /* CommunityRouteListVC */,
+			);
+			path = RouteListVC;
+			sourceTree = "<group>";
+		};
+		A4064EA22B9616750088DAC9 /* UserRouteVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4064EA02B9616710088DAC9 /* UserRouteListViewController.swift */,
+				A4064EA32B9616880088DAC9 /* UserRouteListViewModel.swift */,
+			);
+			path = UserRouteVC;
+			sourceTree = "<group>";
+		};
+		A4064EA72B9639660088DAC9 /* RouteDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4064EA52B96394F0088DAC9 /* RouteDetailsViewController.swift */,
+				A4064EA82B9639790088DAC9 /* RouteDetailsViewModel.swift */,
+			);
+			path = RouteDetailsVC;
+			sourceTree = "<group>";
+		};
+		A44615312B8CA15900F71312 = {
+			isa = PBXGroup;
+			children = (
+				A446153C2B8CA15900F71312 /* TriviaHunt */,
+				A44615532B8CA15D00F71312 /* TriviaHuntTests */,
+				A446155D2B8CA15D00F71312 /* TriviaHuntUITests */,
+				A446153B2B8CA15900F71312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A446153B2B8CA15900F71312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A446153A2B8CA15900F71312 /* TriviaHunt.app */,
+				A44615502B8CA15D00F71312 /* TriviaHuntTests.xctest */,
+				A446155A2B8CA15D00F71312 /* TriviaHuntUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A446153C2B8CA15900F71312 /* TriviaHunt */ = {
+			isa = PBXGroup;
+			children = (
+				A446153D2B8CA15900F71312 /* AppDelegate.swift */,
+				A446153F2B8CA15900F71312 /* SceneDelegate.swift */,
+				A4B1217A2BA84C10007CA14E /* Extensions */,
+				A4B121862BA9F310007CA14E /* Networking */,
+				A44615852B8F97C700F71312 /* Modules */,
+				A44615822B8F978300F71312 /* Model */,
+				A4B1217F2BA97279007CA14E /* CustomAlertVC */,
+				A4B121892BAAF280007CA14E /* LoginModule */,
+				A4064E9F2B96160F0088DAC9 /* RouteListVC */,
+				A4064EA72B9639660088DAC9 /* RouteDetailsVC */,
+				A44615902B909FF300F71312 /* CreateRouteVC */,
+				A4B121732BA453FB007CA14E /* FinishRouteVC */,
+				A446157F2B8F977300F71312 /* MapVC */,
+				A44615832B8F97AC00F71312 /* LocationDetailVC */,
+				A44615842B8F97B600F71312 /* PointsListVC */,
+				A44615462B8CA15D00F71312 /* Assets.xcassets */,
+				A44615482B8CA15D00F71312 /* LaunchScreen.storyboard */,
+				A446154B2B8CA15D00F71312 /* Info.plist */,
+				A4B121762BA84A9F007CA14E /* GoogleService-Info.plist */,
+			);
+			path = TriviaHunt;
+			sourceTree = "<group>";
+		};
+		A44615532B8CA15D00F71312 /* TriviaHuntTests */ = {
+			isa = PBXGroup;
+			children = (
+				A44615542B8CA15D00F71312 /* TriviaHuntTests.swift */,
+			);
+			path = TriviaHuntTests;
+			sourceTree = "<group>";
+		};
+		A446155D2B8CA15D00F71312 /* TriviaHuntUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A446155E2B8CA15D00F71312 /* TriviaHuntUITests.swift */,
+				A44615602B8CA15D00F71312 /* TriviaHuntUITestsLaunchTests.swift */,
+			);
+			path = TriviaHuntUITests;
+			sourceTree = "<group>";
+		};
+		A446157B2B8F95C400F71312 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				A44615412B8CA15900F71312 /* LoginViewController.swift */,
+				A44615792B8F941300F71312 /* LoginViewModel.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		A446157C2B8F95CE00F71312 /* CommunityRouteListVC */ = {
+			isa = PBXGroup;
+			children = (
+				A446156D2B8CA50900F71312 /* CommunityRouteListViewController.swift */,
+				A446157D2B8F968B00F71312 /* CommunityRouteListViewModel.swift */,
+			);
+			path = CommunityRouteListVC;
+			sourceTree = "<group>";
+		};
+		A446157F2B8F977300F71312 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				A446156F2B8CA87100F71312 /* MapViewController.swift */,
+				A44615802B8F978000F71312 /* MapViewModel.swift */,
+				A44615862B8F9CE900F71312 /* CustomMKPointAnnotation.swift */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		A44615822B8F978300F71312 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4064E9B2B95FE650088DAC9 /* Route.swift */,
+				A44615732B8CC2A700F71312 /* MapPoint.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A44615832B8F97AC00F71312 /* LocationDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				A44615712B8CC26F00F71312 /* LocationDetailViewController.swift */,
+				A44615882B8FA01F00F71312 /* LocationDetailViewModel.swift */,
+			);
+			path = LocationDetailVC;
+			sourceTree = "<group>";
+		};
+		A44615842B8F97B600F71312 /* PointsListVC */ = {
+			isa = PBXGroup;
+			children = (
+				A44615772B8CDB8200F71312 /* PointsListViewController.swift */,
+				A446158A2B8FA9A100F71312 /* PointsListViewModel.swift */,
+			);
+			path = PointsListVC;
+			sourceTree = "<group>";
+		};
+		A44615852B8F97C700F71312 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A44615752B8CD68700F71312 /* LocationManager.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A44615902B909FF300F71312 /* CreateRouteVC */ = {
+			isa = PBXGroup;
+			children = (
+				A446158C2B909FC900F71312 /* CreateRouteViewController.swift */,
+				A4A7B20C2B974AAD00056047 /* AddMapPointCell.swift */,
+				A446158E2B909FE700F71312 /* CreateRouteViewModel.swift */,
+				A4A7B2152B974E7A00056047 /* AddMapPointVC */,
+				A4A7B2102B974E5700056047 /* EditMapPointDataVC */,
+			);
+			path = CreateRouteVC;
+			sourceTree = "<group>";
+		};
+		A4A7B2102B974E5700056047 /* EditMapPointDataVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7B20E2B974E5200056047 /* EditMapPointDataViewController.swift */,
+				A4A7B2112B974E6500056047 /* EditMapPointDataViewModel.swift */,
+			);
+			path = EditMapPointDataVC;
+			sourceTree = "<group>";
+		};
+		A4A7B2152B974E7A00056047 /* AddMapPointVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7B2132B974E7700056047 /* AddMapPointViewController.swift */,
+				A4A7B2162B974E8F00056047 /* AddMapPointViewModel.swift */,
+			);
+			path = AddMapPointVC;
+			sourceTree = "<group>";
+		};
+		A4B1216E2BA1F781007CA14E /* FirebaseHandler */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7B2182B979DE200056047 /* FirebaseStorageHandler.swift */,
+				A4B1216F2BA20EB0007CA14E /* FirebaseAuthenticator.swift */,
+			);
+			path = FirebaseHandler;
+			sourceTree = "<group>";
+		};
+		A4B121732BA453FB007CA14E /* FinishRouteVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121712BA453F6007CA14E /* FinishRouteViewController.swift */,
+				A4B121742BA45426007CA14E /* FinishRouteViewModel.swift */,
+			);
+			path = FinishRouteVC;
+			sourceTree = "<group>";
+		};
+		A4B1217A2BA84C10007CA14E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121782BA84BFF007CA14E /* String.swift */,
+				A4B121802BA9ABF5007CA14E /* UUID.swift */,
+				A4B1217B2BA84C1D007CA14E /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4B1217F2BA97279007CA14E /* CustomAlertVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4B1217D2BA97193007CA14E /* CustomAlertViewController.swift */,
+			);
+			path = CustomAlertVC;
+			sourceTree = "<group>";
+		};
+		A4B121862BA9F310007CA14E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A4B1216E2BA1F781007CA14E /* FirebaseHandler */,
+				A4B121842BA9F2E7007CA14E /* PathMonitor.swift */,
+				A4064EAA2B9644260088DAC9 /* PasswordChecker.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A4B121892BAAF280007CA14E /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				A4B1218A2BAAF29B007CA14E /* CustomObjects */,
+				A446157B2B8F95C400F71312 /* LoginVC */,
+				A4064E982B95EA450088DAC9 /* SignUpVC */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		A4B1218A2BAAF29B007CA14E /* CustomObjects */ = {
+			isa = PBXGroup;
+			children = (
+				A4B121872BAAED53007CA14E /* TriviaLoginTextField.swift */,
+			);
+			path = CustomObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A44615392B8CA15900F71312 /* TriviaHunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44615642B8CA15D00F71312 /* Build configuration list for PBXNativeTarget "TriviaHunt" */;
+			buildPhases = (
+				A44615362B8CA15900F71312 /* Sources */,
+				A44615372B8CA15900F71312 /* Frameworks */,
+				A44615382B8CA15900F71312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriviaHunt;
+			packageProductDependencies = (
+				A4064E922B95D9440088DAC9 /* FirebaseAuth */,
+				A4064E942B95D9440088DAC9 /* FirebaseFirestore */,
+			);
+			productName = TriviaTreasureHunt;
+			productReference = A446153A2B8CA15900F71312 /* TriviaHunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A446154F2B8CA15D00F71312 /* TriviaHuntTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44615672B8CA15D00F71312 /* Build configuration list for PBXNativeTarget "TriviaHuntTests" */;
+			buildPhases = (
+				A446154C2B8CA15D00F71312 /* Sources */,
+				A446154D2B8CA15D00F71312 /* Frameworks */,
+				A446154E2B8CA15D00F71312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A44615522B8CA15D00F71312 /* PBXTargetDependency */,
+			);
+			name = TriviaHuntTests;
+			productName = TriviaTreasureHuntTests;
+			productReference = A44615502B8CA15D00F71312 /* TriviaHuntTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A44615592B8CA15D00F71312 /* TriviaHuntUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A446156A2B8CA15D00F71312 /* Build configuration list for PBXNativeTarget "TriviaHuntUITests" */;
+			buildPhases = (
+				A44615562B8CA15D00F71312 /* Sources */,
+				A44615572B8CA15D00F71312 /* Frameworks */,
+				A44615582B8CA15D00F71312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A446155C2B8CA15D00F71312 /* PBXTargetDependency */,
+			);
+			name = TriviaHuntUITests;
+			productName = TriviaTreasureHuntUITests;
+			productReference = A446155A2B8CA15D00F71312 /* TriviaHuntUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A44615322B8CA15900F71312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A44615392B8CA15900F71312 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A446154F2B8CA15D00F71312 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A44615392B8CA15900F71312;
+					};
+					A44615592B8CA15D00F71312 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A44615392B8CA15900F71312;
+					};
+				};
+			};
+			buildConfigurationList = A44615352B8CA15900F71312 /* Build configuration list for PBXProject "TriviaHunt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A44615312B8CA15900F71312;
+			packageReferences = (
+				A4064E912B95D9440088DAC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A446153B2B8CA15900F71312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A44615392B8CA15900F71312 /* TriviaHunt */,
+				A446154F2B8CA15D00F71312 /* TriviaHuntTests */,
+				A44615592B8CA15D00F71312 /* TriviaHuntUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A44615382B8CA15900F71312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A446154A2B8CA15D00F71312 /* LaunchScreen.storyboard in Resources */,
+				A44615472B8CA15D00F71312 /* Assets.xcassets in Resources */,
+				A4B121772BA84A9F007CA14E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A446154E2B8CA15D00F71312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A44615582B8CA15D00F71312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A44615362B8CA15900F71312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44615892B8FA01F00F71312 /* LocationDetailViewModel.swift in Sources */,
+				A4A7B2122B974E6500056047 /* EditMapPointDataViewModel.swift in Sources */,
+				A4064E9E2B96160B0088DAC9 /* RouteListViewController.swift in Sources */,
+				A44615422B8CA15900F71312 /* LoginViewController.swift in Sources */,
+				A4A7B2172B974E8F00056047 /* AddMapPointViewModel.swift in Sources */,
+				A4B121752BA45426007CA14E /* FinishRouteViewModel.swift in Sources */,
+				A4B1217E2BA97193007CA14E /* CustomAlertViewController.swift in Sources */,
+				A4B121702BA20EB0007CA14E /* FirebaseAuthenticator.swift in Sources */,
+				A4064EA42B9616880088DAC9 /* UserRouteListViewModel.swift in Sources */,
+				A44615742B8CC2A700F71312 /* MapPoint.swift in Sources */,
+				A4A7B20D2B974AAD00056047 /* AddMapPointCell.swift in Sources */,
+				A4A7B20F2B974E5200056047 /* EditMapPointDataViewController.swift in Sources */,
+				A446158B2B8FA9A100F71312 /* PointsListViewModel.swift in Sources */,
+				A446158D2B909FC900F71312 /* CreateRouteViewController.swift in Sources */,
+				A4A7B2192B979DE200056047 /* FirebaseStorageHandler.swift in Sources */,
+				A44615872B8F9CE900F71312 /* CustomMKPointAnnotation.swift in Sources */,
+				A446153E2B8CA15900F71312 /* AppDelegate.swift in Sources */,
+				A446156E2B8CA50900F71312 /* CommunityRouteListViewController.swift in Sources */,
+				A4B121812BA9ABF5007CA14E /* UUID.swift in Sources */,
+				A4064E9A2B95EA570088DAC9 /* SignUpViewModel.swift in Sources */,
+				A44615762B8CD68700F71312 /* LocationManager.swift in Sources */,
+				A4064EA92B9639790088DAC9 /* RouteDetailsViewModel.swift in Sources */,
+				A4064E972B95EA3F0088DAC9 /* SignUpViewController.swift in Sources */,
+				A44615782B8CDB8200F71312 /* PointsListViewController.swift in Sources */,
+				A4B1217C2BA84C1D007CA14E /* UIColor.swift in Sources */,
+				A4B121852BA9F2E7007CA14E /* PathMonitor.swift in Sources */,
+				A4A7B2142B974E7700056047 /* AddMapPointViewController.swift in Sources */,
+				A44615722B8CC26F00F71312 /* LocationDetailViewController.swift in Sources */,
+				A4064E9C2B95FE650088DAC9 /* Route.swift in Sources */,
+				A44615702B8CA87100F71312 /* MapViewController.swift in Sources */,
+				A446158F2B909FE700F71312 /* CreateRouteViewModel.swift in Sources */,
+				A4064EA12B9616710088DAC9 /* UserRouteListViewController.swift in Sources */,
+				A44615402B8CA15900F71312 /* SceneDelegate.swift in Sources */,
+				A4064EA62B96394F0088DAC9 /* RouteDetailsViewController.swift in Sources */,
+				A4B121792BA84BFF007CA14E /* String.swift in Sources */,
+				A4B121882BAAED53007CA14E /* TriviaLoginTextField.swift in Sources */,
+				A446157E2B8F968B00F71312 /* CommunityRouteListViewModel.swift in Sources */,
+				A446157A2B8F941300F71312 /* LoginViewModel.swift in Sources */,
+				A4B121722BA453F6007CA14E /* FinishRouteViewController.swift in Sources */,
+				A44615812B8F978000F71312 /* MapViewModel.swift in Sources */,
+				A4064EAB2B9644260088DAC9 /* PasswordChecker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A446154C2B8CA15D00F71312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44615552B8CA15D00F71312 /* TriviaHuntTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A44615562B8CA15D00F71312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A446155F2B8CA15D00F71312 /* TriviaHuntUITests.swift in Sources */,
+				A44615612B8CA15D00F71312 /* TriviaHuntUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A44615522B8CA15D00F71312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A44615392B8CA15900F71312 /* TriviaHunt */;
+			targetProxy = A44615512B8CA15D00F71312 /* PBXContainerItemProxy */;
+		};
+		A446155C2B8CA15D00F71312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A44615392B8CA15900F71312 /* TriviaHunt */;
+			targetProxy = A446155B2B8CA15D00F71312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A44615482B8CA15D00F71312 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A44615492B8CA15D00F71312 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A44615622B8CA15D00F71312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A44615632B8CA15D00F71312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A44615652B8CA15D00F71312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CM9HQPL8H2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaHunt/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need to locate you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashyhuckle.TriviaHunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A44615662B8CA15D00F71312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CM9HQPL8H2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaHunt/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need to locate you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashyhuckle.TriviaHunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A44615682B8CA15D00F71312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CM9HQPL8H2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashyhuckle.TriviaHuntTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriviaHunt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TriviaHunt";
+			};
+			name = Debug;
+		};
+		A44615692B8CA15D00F71312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CM9HQPL8H2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashyhuckle.TriviaHuntTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriviaHunt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TriviaHunt";
+			};
+			name = Release;
+		};
+		A446156B2B8CA15D00F71312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CM9HQPL8H2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashyhuckle.TriviaHuntUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriviaTreasureHunt;
+			};
+			name = Debug;
+		};
+		A446156C2B8CA15D00F71312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CM9HQPL8H2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flashyhuckle.TriviaHuntUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriviaTreasureHunt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A44615352B8CA15900F71312 /* Build configuration list for PBXProject "TriviaHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44615622B8CA15D00F71312 /* Debug */,
+				A44615632B8CA15D00F71312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44615642B8CA15D00F71312 /* Build configuration list for PBXNativeTarget "TriviaHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44615652B8CA15D00F71312 /* Debug */,
+				A44615662B8CA15D00F71312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44615672B8CA15D00F71312 /* Build configuration list for PBXNativeTarget "TriviaHuntTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44615682B8CA15D00F71312 /* Debug */,
+				A44615692B8CA15D00F71312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A446156A2B8CA15D00F71312 /* Build configuration list for PBXNativeTarget "TriviaHuntUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A446156B2B8CA15D00F71312 /* Debug */,
+				A446156C2B8CA15D00F71312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4064E912B95D9440088DAC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4064E922B95D9440088DAC9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4064E912B95D9440088DAC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A4064E942B95D9440088DAC9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4064E912B95D9440088DAC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A44615322B8CA15900F71312 /* Project object */;
+}
